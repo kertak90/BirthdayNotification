@@ -28,7 +28,7 @@ namespace BirthdayNotification
             // var nowTime = new DateTime(2020, 11, 24);
             var groupedlist = userList
                 .Select(p => {
-                        var daysBeforeBirthDay = ((new DateTime(1000, p.BirthDay.Month, p.BirthDay.Day)).Subtract(new DateTime(1000, nowTime.Month, nowTime.Day)).Days < -335 
+                        var daysBeforeBirthDay = ((new DateTime(1000, p.BirthDay.Month, p.BirthDay.Day)).Subtract(new DateTime(1000, nowTime.Month, nowTime.Day)).Days < -334 
                                 ? new DateTime(1001, p.BirthDay.Month, p.BirthDay.Day)
                                 : new DateTime(1000, p.BirthDay.Month, p.BirthDay.Day))
                             .Subtract(new DateTime(1000, nowTime.Month, nowTime.Day))
